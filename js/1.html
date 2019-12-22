@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>ToDoList</title>
+    <link rel="stylesheet" href="../CSS/2.css">
+</head>
+<body>
+<div class="header">
+    <section>
+        <form action="javascript:postaction()" id="form">
+            <label for="title">SpongeBob's ToDoList</label>
+            <input type="text" id="title" name="title" placeholder="海绵宝宝今天要干啥" required="required" autocomplete="off" />
+        </form>
+    </section>
+</div>
+<section>
+    <h2 onclick="save()">奥利给 <span id="todocount"></span></h2>
+    <ol id="todolist" class="demo-box">
+    </ol>
+    <h2>已经完成 <span id="donecount"></span></h2>
+    <ul id="donelist">
+    </ul>
+</section>
+<div id="clear">
+    <button id="clearbutton"><h3>一键咸鱼</h3></button>
+</div>
+<script type="text/javascript" src="3.js"></script>
+</body>
+</html>
